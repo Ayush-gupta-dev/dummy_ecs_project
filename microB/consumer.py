@@ -4,7 +4,9 @@ rabbitmq_credentials = pika.PlainCredentials('user', 'password')
 
 
 # Establishing connection with RabbitMQ
-connection = pika.BlockingConnection(pika.ConnectionParameters(host='rabbitmq', credentials=rabbitmq_credentials))
+# connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost', credentials=rabbitmq_credentials))
+connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
+
 channel = connection.channel()
 
 # Declare a queue for receiving messages from Microservice A

@@ -2,7 +2,7 @@
 import pika
 
 # Establishing connection with RabbitMQ
-connection = pika.BlockingConnection(pika.ConnectionParameters('rabbitmq'))
+connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
 channel = connection.channel()
 
 # Declare a queue for sending messages from Microservice B to Microservice A
