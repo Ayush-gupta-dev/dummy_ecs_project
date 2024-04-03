@@ -18,7 +18,7 @@
                 },
                 {
                     "name": "RABBITMQ_HOST",
-                    "value": "rabbitmqport"
+                    "value": "rabbitMqservice.dummy_ecs_test_ayush"
                 }
             ],
             "environmentFiles": [],
