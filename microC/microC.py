@@ -2,15 +2,15 @@ from dotenv import load_dotenv
 import os
 import pika
 
+load_dotenv()
+
 rabbitmq_user = os.environ.get('RABBITMQ_USER')
 rabbitmq_password = os.environ.get('RABBITMQ_PASSWORD')
 rabbitmq_credentials = pika.PlainCredentials(rabbitmq_user, rabbitmq_password)
-# Establishing connection with RabbitMQ
-# connection = pika.BlockingConnection(pika.ConnectionParameters(host='some-rabbit', credentials=rabbitmq_credentials))
-# connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
-# channel = connection.channel()
+
 # Establishing connection with RabbitMQ
 rabbitmq_host = os.environ.get('RABBITMQ_HOST')
+print("RabbitMQ Host:", rabbitmq_host)
 connection = pika.BlockingConnection(pika.ConnectionParameters(host=rabbitmq_host, credentials=rabbitmq_credentials))
 channel = connection.channel()
 
