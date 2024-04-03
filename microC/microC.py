@@ -8,7 +8,7 @@ rabbitmq_user = os.environ.get('RABBITMQ_USER')
 rabbitmq_password = os.environ.get('RABBITMQ_PASSWORD')
 rabbitmq_credentials = pika.PlainCredentials(rabbitmq_user, rabbitmq_password)
 
-# Establishing connection with RabbitMQ
+# Establishing connection with RabbitMQ.
 rabbitmq_host = os.environ.get('RABBITMQ_HOST')
 print("RabbitMQ Host:", rabbitmq_host)
 connection = pika.BlockingConnection(pika.ConnectionParameters(host=rabbitmq_host, credentials=rabbitmq_credentials))
