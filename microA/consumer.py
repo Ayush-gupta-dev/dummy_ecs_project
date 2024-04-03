@@ -2,7 +2,9 @@ from dotenv import load_dotenv
 import os
 import pika
 # RabbitMQ credentials
-# RabbitMQ credentials
+
+load_dotenv()
+
 rabbitmq_user = os.environ.get('RABBITMQ_USER')
 rabbitmq_password = os.environ.get('RABBITMQ_PASSWORD')
 rabbitmq_credentials = pika.PlainCredentials(rabbitmq_user, rabbitmq_password)
