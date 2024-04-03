@@ -11,7 +11,7 @@ env:
   ECR_REPOSITORY: microc # set this to your Amazon ECR repository name
   ECS_SERVICE: rabbitMqservice		                # set this to your Amazon ECS service name
   ECS_CLUSTER: dummy_ecs_test_ayush	         # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: taskdef-microc-consumer.json # set this to the path to your Amazon ECS task definition
+  ECS_TASK_DEFINITION: microC/taskdef-microc-consumer.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: microCconsumer           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
