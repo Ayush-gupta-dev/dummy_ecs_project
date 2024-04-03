@@ -26,8 +26,11 @@ jobs:
     environment: production
 
     steps:
-    - name: Checkout ecs_dev_ayush Branch
+    - name: Checkout microA directory
       uses: actions/checkout@v2
+      with:
+        path: microA
+
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
