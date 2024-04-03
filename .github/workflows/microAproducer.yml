@@ -31,6 +31,9 @@ jobs:
       with:
         path: microA
 
+    - name: Print Working Directory
+      run: |
+        echo "Current Working Directory: $(pwd)"
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
