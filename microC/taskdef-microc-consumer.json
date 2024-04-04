@@ -10,7 +10,7 @@
             "environment": [
                 {
                     "name": "RABBITMQ_PASSWORD",
-                    "value": "password"
+                    "value": "rabbitmqpassword"
                 },
                 {
                     "name": "RABBITMQ_USER",
@@ -18,7 +18,7 @@
                 },
                 {
                     "name": "RABBITMQ_HOST",
-                    "value": "rabbitmqport"
+                    "value": "b-50722492-0855-4b72-84a7-f1e6ca8b0e53.mq.ap-south-1.amazonaws.com:5671"
                 }
             ],
             "environmentFiles": [],
