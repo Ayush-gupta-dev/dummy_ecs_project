@@ -19,8 +19,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application code into the container
 COPY . .
 
-EXPOSE 5672 
-EXPOSE 5671
+# EXPOSE 5672 
+# EXPOSE 5671
 
 # Run the consumer
 # CMD ["python", "microC.py"]
